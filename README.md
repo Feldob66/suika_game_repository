@@ -1,2 +1,2 @@
 # suika_game_repository
-RFT miniprojekt
+RFT beadandó miniprojekt
