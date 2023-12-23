@@ -1,2 +1,2 @@
 # suika_game_repository
-RFT beadandó miniprojekt
+RFT beadandó feladat - Suika Game
