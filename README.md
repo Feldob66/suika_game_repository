@@ -1,2 +1,2 @@
 # suika_game_repository
-RFT beadandó feladat - Suika Game
+RFT beadandó feladat - Suika Game kirakós játék
