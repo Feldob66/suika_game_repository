@@ -2,15 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Canvas Golyók</title>
+    <title>Canvas Layout</title>
     <style>
-        canvas {
-            border: 1px solid black;
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #000099 60%, #33cc33 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .canvas-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .squareCanvas {
+            width: 300px;
+            height: 300px;
+            background-color: #f8f8f8;
+            border: 2px solid black;
+        }
+
+        #canvas1 {
+            background: linear-gradient(to bottom right, #ffff00 45%, #ffcc00 100%);
+        }
+
+        .rectangleCanvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+            height: 600px;
+            background-color: #f8f8f8;
+            border: 2px solid black;
+        }
+
+        #canvas3 {
+            background: linear-gradient(to bottom left, #ffff00 45%, #ffcc00 100%);
         }
     </style>
 </head>
 <body>
-    <canvas id="myCanvas" width="600" height="400"></canvas>
+    <div class="canvas-container">
+        <canvas class="squareCanvas" id="canvas1" width="300" height="300"></canvas>
+    </div>
+
+    <div class="canvas-container">
+        <canvas class="rectangleCanvas" id="canvas2" width="400" height="600"></canvas>
+    </div>
+
+    <div class="canvas-container">
+        <canvas class="squareCanvas" id="canvas3" width="300" height="300"></canvas>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
